@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-//        int size = 20;
-//        int lowestNumber = 0;
-//        int highestNumber = 20;
-//
-//
-//        int[] array = createNumberArray(size, lowestNumber, highestNumber);
+        int size = 20;
+        int lowestNumber = 0;
+        int highestNumber = 20;
+
+
+        int[] array = createNumberArray(size, lowestNumber, highestNumber);
     }
 
 
@@ -38,12 +38,13 @@ public class Main {
 
     public static void Pattern1() {
 
-            for (int columns = 0; columns < 6; columns++) {
-                System.out.println("*");
-            }
-            System.out.println();
+        for (int columns = 0; columns < 6; columns++) {
+            System.out.println("*");
         }
+        System.out.println();
     }
+}
+
     public static void Pattern2() {
         for (int e = 1; e < 6; rows++) {
 
@@ -51,5 +52,15 @@ public class Main {
                 System.out.println("*");
             }
             System.out.println();
-}
+        }
 
+    }
+
+    public static void Pattern3() {
+        for (int e = 1; e < 7; e++) {
+            for (int row = 1; row < 7; row++) {
+                System.out.print(row);
+            }
+        }
+    }
+    
