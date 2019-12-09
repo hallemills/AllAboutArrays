@@ -10,23 +10,29 @@ public class Main {
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
+
+
+        Pattern1();
+        Pattern2();
+        Pattern3();
     }
 
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
 
+
         //fill in with random values
-        for (int h = 0; h < size; h++) {
-            array[h] = createRandomNumber(lowestNumber, highestNumber);
+        for (int i = 0; i < size; i++) {
+            array[i] = createRandomNumber(lowestNumber, highestNumber);
         }
 
         return array;
     }
 
     public static void printArray(int[] array) {
-        for (int h = 0; h < array.length; h++) {
-            System.out.println(array[h]);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
     }
 
@@ -37,19 +43,21 @@ public class Main {
     }
 
     public static void Pattern1() {
-
-        for (int columns = 0; columns < 6; columns++) {
-            System.out.println("*");
-        }
-        System.out.println();
-    }
-}
-
-    public static void Pattern2() {
-        for (int e = 1; e < 6; rows++) {
+        for (int i = 0; i < 6; i++) {
 
             for (int columns = 0; columns < 6; columns++) {
-                System.out.println("*");
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+
+
+    public static void Pattern2() {
+        for (int e = 1; e < 6; e++) {
+            for (int row = 1; row < 6; row++) {
+                System.out.print(e);
             }
             System.out.println();
         }
@@ -61,6 +69,15 @@ public class Main {
             for (int row = 1; row < 7; row++) {
                 System.out.print(row);
             }
+            System.out.println();
+
         }
+
     }
-    
+
+    public st
+
+}
+
+
+
