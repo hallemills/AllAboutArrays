@@ -15,6 +15,8 @@ public class Main {
         Pattern1();
         Pattern2();
         Pattern3();
+        Pattern4();
+        Pattern5();
     }
 
 
@@ -46,6 +48,7 @@ public class Main {
         for (int i = 0; i < 6; i++) {
 
             for (int columns = 0; columns < 6; columns++) {
+                
                 System.out.print("*");
             }
             System.out.println();
@@ -55,8 +58,10 @@ public class Main {
 
 
     public static void Pattern2() {
-        for (int e = 1; e < 6; e++) {
+        for (int e = 1; e < 7; e++) {
+
             for (int row = 1; row < 6; row++) {
+
                 System.out.print(e);
             }
             System.out.println();
@@ -66,7 +71,9 @@ public class Main {
 
     public static void Pattern3() {
         for (int e = 1; e < 7; e++) {
+
             for (int row = 1; row < 7; row++) {
+
                 System.out.print(row);
             }
             System.out.println();
@@ -75,9 +82,38 @@ public class Main {
 
     }
 
-    public st
+    public static void Pattern4() {
+        for (int rows = 1; rows < 7; rows++) {
+
+            for (int columns = 1; columns <= rows; columns++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+
+    public static void Pattern5() {
+        for (int rows = 1; rows <= 6; rows++) {
+
+            for (int columns = 1; columns <=rows; columns++) {
+                System.out.print(rows);
+            }
+            System.out.println();
+        }
+    }
+
+
+
 
 }
+
+
+
+
+
+
 
 
 
