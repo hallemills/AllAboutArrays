@@ -11,12 +11,14 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
+        System.out.print("The sum of the array is " + sum(array));
 
-        Pattern1();
-        Pattern2();
-        Pattern3();
-        Pattern4();
-        Pattern5();
+
+//        Pattern1();
+//        Pattern2();
+//        Pattern3();
+//        Pattern4();
+//        Pattern5();
     }
 
 
@@ -42,6 +44,19 @@ public class Main {
 
         int number = (int) ((Math.random() * (highestNumber - lowestNumber)));
         return number;
+    }
+
+    public static int sum(int[] array) {
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+
+        }
+
+
+        return sum;
+
     }
 
     public static void Pattern1() {
@@ -106,10 +121,7 @@ public class Main {
 
 
 
-
-}
-
-
+    }
 
 
 
