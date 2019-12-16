@@ -21,10 +21,10 @@ public class Main {
 //        Pattern5();
 
 
-        System.out.print("The sum of the array is " + sum(array));
-        System.out.print("The minimum of the array is " + minimum(array));
-        printArray(array);
-        System.out.print("The maximum of the array is " + maximum(array));
+//        System.out.print("The sum of the array is " + sum(array));
+//        System.out.print("The minimum of the array is " + minimum(array));
+//        printArray(array);
+//        System.out.print("The maximum of the array is " + maximum(array));
 
 
     }
