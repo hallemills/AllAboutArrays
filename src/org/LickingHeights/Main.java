@@ -27,6 +27,13 @@ public class Main {
 //        System.out.print("The maximum of the array is " + maximum(array));
 
 
+        String[] adjectives = {"Bashful", "Shiny", "Fast", "Plain"};
+        String[] places = {"Hawaii", "Floria", "Arizona", "Japan"};
+        String[] people = {"Chris Brown", "Billie", "Harry Styles", "Nemo" };
+        String[] verbs = {"Dry", "Paint", "Close", "Love"};
+        String[] times = {"1:00", "11:03", "9:36", "6:45"};
+        String[] things = {"Food", "Shoes", "Computer", "Bed"}; 
+
     }
 
 
