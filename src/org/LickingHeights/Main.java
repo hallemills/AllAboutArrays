@@ -33,7 +33,7 @@ public class Main {
         String[] things = {"Food", "Shoes", "Computer", "Bed"};
 
 
-        System.out.println("randomword" + people);
+        System.out.println(randomword(people));
         System.out.print("I was" + " " + sentencegenerator(verb) + " " + " " + "down the" + " " + sentencegenerator(places) + " ");
         System.out.println("Around" + " " + sentencegenerator(times) + " " + "with my bestfriend" + " " + sentencegenerator(people) + " ");
         System.out.print("And we" + " " + sentencegenerator(verb) + " " + " " + "a" + " " + sentencegenerator(adjectives) + " " + " " + sentencegenerator(things) + " ");
@@ -72,8 +72,7 @@ public class Main {
     }
 
 
-
-        public static void Pattern1() {
+    public static void Pattern1() {
         for (int i = 0; i < 6; i++) {
 
             for (int columns = 0; columns < 6; columns++) {
@@ -134,8 +133,6 @@ public class Main {
     }
 
 
-
-
     public static int sum(int[] array) {
         int sum = 0;
 
@@ -192,7 +189,7 @@ public class Main {
 
 
     }
-
+}
 
 
 
