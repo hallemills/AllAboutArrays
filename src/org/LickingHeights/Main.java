@@ -11,15 +11,7 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-        System.out.print("The sum of the array is " + sum(array));
 
-
-        
-        System.out.print("The min of the array is " + min(array));
-
-
-
-        System.out.print("the max of the array is " + max(array));
 
 
 //        Pattern1();
@@ -27,6 +19,14 @@ public class Main {
 //        Pattern3();
 //        Pattern4();
 //        Pattern5();
+
+
+        System.out.print("The sum of the array is " + sum(array));
+        System.out.print("The minimum of the array is " + minimum(array));
+        printArray(array);
+        System.out.print("The maximum of the array is " + maximum(array));
+
+
     }
 
 
@@ -67,28 +67,25 @@ public class Main {
 
     }
 
-
-    public static int min(int[] array) {
-        int min = 50;
-
-        for (int i = 50; i < array.length; i++) {
-            min += array[i];
-
+    public static int minimum(int[] array) {
+        int minimum = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (minimum > array[i]) {
+                minimum= array[i];
+            }
         }
-
-        return min;
-
+        return minimum;
     }
 
-
-    public static int max(int [] array) {
-        int max = 200;
-
-        for (int i = 200; i < array.length; i++) {
-            max += array[i];
+    public static int maximum(int[] array) {
+        int maximum = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if (maximum < array[i]) {
+                maximum= array[i];
+            }
         }
 
-        return max;
+        return maximum;
     }
 
     public static void Pattern1() {
